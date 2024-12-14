@@ -111,9 +111,9 @@ body {
 
 /* Home Section */
 #home {
-    min-height: 100vh;
+    min-height: 60vh;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
-                url(img/bk.jpg) center/cover;
+                url(img/home1.png) center/cover;
     color: white;
     display: flex;
     align-items: center;
@@ -464,37 +464,37 @@ body {
 
 .project-img1 {
     height: 200px;
-    background: url(img/ec.jpg) center/cover;
+    background: url(img/1.png) center/cover;
     position: relative;
     overflow: hidden;
 }
 .project-img2 {
     height: 200px;
-    background: url(img/pw.png) center/cover;
+    background: url(img/3.png) center/cover;
     position: relative;
     overflow: hidden;
 }
 .project-img3 {
     height: 200px;
-    background: url(img/tr.jpg) center/cover;
+    background: url(img/6.png) center/cover;
     position: relative;
     overflow: hidden;
 }
 .project-img4 {
     height: 200px;
-    background: url(img/dkle.png) center/cover;
+    background: url(img/5.png) center/cover;
     position: relative;
     overflow: hidden;
 }
 .project-img5 {
     height: 200px;
-    background: url(img/webapp.png) center/cover;
+    background: url(img/4.png) center/cover;
     position: relative;
     overflow: hidden;
 }
 .project-img6 {
     height: 200px;
-    background: url(img/pdk.png) center/cover;
+    background: url(img/2.png) center/cover;
     position: relative;
     overflow: hidden;
 }
