@@ -4,36 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pasidu Dilshan Kariyawasam - Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+      
+        /* Navbar Styles */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .navbar-brand {
+            font-weight: bold;
+            color: var(--primary-color) !important;
+        }
+
+        .navbar-nav .nav-link {
+            color: var(--dark-color);
+            transition: color 0.3s ease;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: var(--primary-color);
+        }
+
+        /* Hero Section */
+        .hero-section {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+
+        .hero-section .typed-cursor {
+            color: white;
+        }
+
+       
+        
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .hero-section h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar">
-        <div class="nav-content">
-            <a href="#home" class="logo">PDK</a>
-            <div class="mobile-menu">
-                <i class="fas fa-bars"></i>
-            </div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#skills">Skills</a>
-                <a href="#education">Education</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
-                
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#edu">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home">
-        <div class="home-content">
-            <h1>Hi, I'm <span class="typing-text">P.D Kariyawasam</span></h1>
-            <p>Web Developer & Designer</p>
-            <a href="#contact" class="btn">Get In Touch</a>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white">
+        <div class="container">
+            <h1 class="mb-3">Hi, I'm <span id="typed-output"></span></h1>
+            <p class="lead">Web Developer & Designer</p>
+            <a href="#contact" class="btn btn-light mt-3">Get In Touch</a>
         </div>
     </section>
 
@@ -49,11 +106,11 @@
                 <p>I specialize in front-end development and have worked on various projects ranging from personal portfolios to complex web applications. My approach combines creativity with technical expertise to create engaging digital experiences.</p>
                 <div class="about-stats">
                     <div class="stat">
-                        <span>2+</span>
+                        <span>3+</span>
                         <p>Years Experience</p>
                     </div>
                     <div class="stat">
-                        <span>50+</span>
+                        <span>12+</span>
                         <p>Projects Completed</p>
                     </div>
                     <br>
@@ -115,32 +172,41 @@
     </section>
 
     <!-- Education Section -->
-<section id="education">
+<section id="edu">
     <div class="education-content">
         <h2>Education Qualifications</h2>
         <div class="timeline">
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Bachelor of Science in Computer Science</h3>
-                    <p>University of Colombo School of Computing</p>
-                    <span class="timeline-date">2020 - Present</span>
-                    <p class="timeline-description">Pursuing a comprehensive degree in Computer Science with a focus on software development and web technologies.</p>
-                </div>
-            </div>
+            
             <div class="timeline-item">
                 <div class="timeline-content">
                     <h3>Advanced Diploma in Web Development</h3>
                     <p>IJSE - Institute of Software Engineering</p>
-                    <span class="timeline-date">2019 - 2020</span>
+                    <span class="timeline-date">2023 - 2024</span>
                     <p class="timeline-description">Completed an intensive web development program covering full-stack technologies and modern web design principles.</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
+                    <h3>Advanced Diploma in English </h3>
+                    <p>Online Course-Nelaka & Andrew</p>
+                    <span class="timeline-date">2024 - Present</span>
+                    <p class="timeline-description">Completed 45 day English spoken and grammar Course..</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
                     <h3>GCE Advanced Level</h3>
-                    <p>Maliyadeva College</p>
-                    <span class="timeline-date">2016 - 2018</span>
-                    <p class="timeline-description">Completed Advanced Level studies with a focus on Physical Science stream.</p>
+                    <p>Nagoda royal College</p>
+                    <span class="timeline-date">2020 - 2023</span>
+                    <p class="timeline-description">Completed Advanced Level studies with a focus on Technology stream.SFT-A/ICT-A/ET-B</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>GCE Ordinary Level</h3>
+                    <p>N.Vijitha College</p>
+                    <span class="timeline-date">2018 - 2020</span>
+                    <p class="timeline-description">Completed Ordinary Level .Mathematics-B/Science-B/English-C.</p>
                 </div>
             </div>
         </div>
@@ -156,8 +222,8 @@
                     <div class="project-img1">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.behance.net/gallery/214733815/E-Commerce-Full-Website" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/kp-dilshan" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -175,8 +241,8 @@
                     <div class="project-img2">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://kp-dilshan.github.io/portfolio/" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.behance.net/gallery/214734187/Portfolio-Full-Website" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/kp-dilshan" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -194,8 +260,8 @@
                     <div class="project-img3">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://kp-dilshan.github.io/dilshan/" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.behance.net/gallery/214734343/Travel-Guide-Full-Website" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/kp-dilshan" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -214,8 +280,8 @@
                     <div class="project-img4">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.behance.net/gallery/214734751/DK-Learning-Website" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/kp-dilshan" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
@@ -234,20 +300,20 @@
                     <div class="project-img5">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="https://kp-dilshan.github.io/Scientific-Calculator/" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.behance.net/gallery/214734859/Academy-Website" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/kp-dilshan" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Scientific Calculator </h3>
-                        <p>A Web application Scientific Calculator </p>
+                        <h3>Academy Website </h3>
+                        <p>A moder looking and responsive academy website development</p>
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS</span>
                             <span>JavaScript</span>
-                            <span>Electron js</span>
-                            <span>Node js</span>
+                            <span>bootstrap</span>
+                            
                         </div>
                     </div>
                 </div>
@@ -255,14 +321,14 @@
                     <div class="project-img6">
                         <div class="project-overlay">
                             <div class="project-links">
-                                <a href="#" target="_blank"><i class="fas fa-link"></i></a>
-                                <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.behance.net/gallery/214735021/Salon-Website" target="_blank"><i class="fas fa-link"></i></a>
+                                <a href="https://github.com/kp-dilshan" target="_blank"><i class="fab fa-github"></i></a>
                             </div>
                         </div>
                     </div>
                     <div class="project-info">
-                        <h3>Travel Guide Website</h3>
-                        <p>A modern and responsive tourisam/travel guide website </p>
+                        <h3>Salon Website</h3>
+                        <p>A modern and responsive salon website </p>
                         <div class="project-tech">
                             <span>HTML5</span>
                             <span>CSS</span>
@@ -270,6 +336,7 @@
                             <span>PHP</span>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -310,9 +377,44 @@
         <p>&copy; 2024 Pasidu Dilshan Kariyawasam. All rights reserved.</p>
     </footer>
 
-   
+
+    <!-- Bootstrap and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Typed.js for typing animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.16/typed.umd.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Typing Animation
+        document.addEventListener('DOMContentLoaded', () => {
+            new Typed('#typed-output', {
+                strings: ['Pasidu Dilshan', 'Web Developer', 'Designer','Freelancer'],
+                typeSpeed: 100,
+                backSpeed: 50,
+                loop: true
+            });
+
+            // Smooth Scrolling
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            // Navbar Scroll Effect
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('shadow-sm');
+                } else {
+                    navbar.classList.remove('shadow-sm');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
-
-
-
