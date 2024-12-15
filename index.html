@@ -342,29 +342,33 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+  <!-- Contact Section -->
     <section id="contact">
         <div class="contact-content">
             <h2>Contact Me</h2>
             <div class="contact-form">
-                <form id="contactForm">
-                    <div class="form-group">
-                        <input type="text" placeholder="Your Name" required>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <div>
+                            <input type="hidden" name="access_key" value="b63449c4-37b5-4c86-96dc-210f2fbbdb96">
+                            <div class="form-group">
+                                <input type="text" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" name="Subject" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea rows="5" name="Message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" >Send Message</button>
                     </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Your Email" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="text" placeholder="Subject" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea rows="5" placeholder="Your Message" required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Send Message</button>
                 </form>
             </div>
         </div>
     </section>
+   
 
     <!-- Footer -->
     <footer>
