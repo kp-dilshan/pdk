@@ -589,6 +589,26 @@ body {
     border-color: var(--primary-color);
     box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.2);
 }
+button {
+    display: inline-block;
+    padding: 13px 20px;
+    background: var(--primary-color);
+    color: rgb(27, 23, 23);
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: var(--transition);
+    border: 2px solid var(--primary-color);
+    animation: fadeInUp 1s ease 0.4s;
+    animation-fill-mode: both;
+}
+
+button:hover {
+    background: transparent;
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
 
 /* Mobile Menu */
 .mobile-menu {
